@@ -24,7 +24,10 @@
   style="width:40px;height:40px;"
 />
   <div class="card-footer">
-      <button class="btn btn-primary float-right" (click)="showAlbum()">
-        Raise Alert
-      </button>
+   <button
+  class="btn btn-primary float-right"
+  [routerLink]="['/albums', album.id]"
+>
+  See Details
+</button>
     </div>
